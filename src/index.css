@@ -1,0 +1,257 @@
+* {
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    height: 53.3125em;
+    display: block;
+    margin: 0 auto;
+}
+
+.head {
+    height: 4.375em;
+    padding: 2em;
+    box-shadow: 0em 0.1875em 0.3125em -0.125em #222222;
+    border-radius: 1em 1em 0 0 ;
+}
+
+.grid-pic-container {
+    display: none;
+}
+
+.pic-container {
+    margin: 2em 3em;
+}
+
+.pic-container-img {
+    height: 35%;
+    width: 100%;
+}
+
+.exp-container {
+    height: 112px;
+    max-width: 347px;
+    margin: 2em 3em;
+}
+
+.cards-container {
+    display: flex;
+    padding: 1em;
+    margin: 2em 0em 2em 3em;
+    font-size: 12px;
+    gap: 1em;
+    /* overflow-x: scroll; */
+}
+
+.card-info {
+    position: relative;
+    width: 176px;
+}
+
+.card-img {
+    height: 235px;
+    border-radius: 0.75em;
+}
+
+.card-details {
+    padding: 0.5em 0;
+}
+
+.card-ratings {
+    display: flex;
+    color: #918E9B;
+    align-items: center;
+}
+
+.fa-star {
+    color: #FE395C;
+}
+
+.card-ratings > * {
+    margin-right: 0.5em;
+}
+
+.description {
+    height: 3em;
+    overflow: hidden;
+}
+
+.banner-display {
+    display: none;
+}
+
+.card-banner {
+    display: block;
+    position: absolute;
+    width: 61px;
+    height: 20px;
+    color: #222222;
+    background-color: white;
+    top: 0;
+    left: 0;
+    margin: 0.5em;
+    font-size: 10px;
+    text-align: center;
+}
+
+.banner {
+    margin-top: 0.25em;
+}
+
+
+/* Styles for small devices (phones, portrait) */
+@media (max-width: 600px) {
+    /* Your CSS */
+    
+}
+
+/* Styles for larger phones and small tablets (portrait) */
+@media (min-width: 601px) and (max-width: 768px) {
+    .pic-container {
+        display: block;
+        margin: 2em auto;
+        width: 500px;
+    }
+    .pic-container-img {
+        height: 37%;
+        width: 100%;
+    }        
+}
+
+/* Styles for large tablets (landscape) and small laptops */
+@media (min-width: 769px) and (max-width: 1200px) {
+    .pic-container {
+        display: block;
+        margin: 2em auto;
+        width: 600px;
+    }
+    .pic-container-img {
+        height: 50%;
+        width: 100%;
+    }
+}
+
+/* Styles for large laptops and desktops */
+@media (min-width: 1201px) {
+    .pic-container {
+        display: block;
+        margin: 2em auto;
+        width: 840px;
+    }
+    
+    .pic-container-img {
+        height: 60%;
+        width: 100%;
+    }
+}
+
+
+
+/* below is to show how elements can be updated in grid container
+    for this grid-pic-container in Pictures.jsx should be enabled
+    
+.grid-pic-container {
+    margin: 2em 3em;
+    height: 14.375em;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    gap: 0.5em;
+}
+
+.grid-1,
+.grid-2,
+.grid-3,
+.grid-4,
+.grid-5 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.grid-1-img-1,
+.grid-2-img-1,
+.grid-2-img-2,
+.grid-3-img-1,
+.grid-3-img-2,
+.grid-4-img-1,
+.grid-4-img-2,
+.grid-5-img-1,
+.grid-5-img-2 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 0.5em;
+}
+
+.grid-1-img-1,
+.grid-2-img-2,
+.grid-3-img-1,
+.grid-3-img-2,
+.grid-4-img-1,
+.grid-4-img-2,
+.grid-5-img-1,
+.grid-5-img-2 {
+    height: 6.0625em;
+}
+
+.grid-2-img-1 {
+    height: 3.9375em;
+}
+
+.grid-1 {
+    margin-top: 3.4375em;
+}
+
+.grid-2 {
+    margin-top: 0.625em;
+}
+
+.grid-3 {
+    justify-content: flex-end;
+}
+
+.grid-5 {
+    margin-top: 0.9375em;
+}
+
+.grid-1-img-1 {
+    background-image: url('./assets/grid1image1.png');
+}
+
+.grid-2-img-1 {
+    background-image: url('./assets/grid2image1.png');
+}
+
+.grid-2-img-2 {
+    background-image: url('./assets/grid2image2.png');
+}
+
+.grid-3-img-1 {
+    background-image: url('./assets/grid3image1.png');
+}
+
+.grid-3-img-2 {
+    background-image: url('./assets/grid3image2.png');
+}
+
+.grid-4-img-1 {
+    background-image: url('./assets/grid4image1.png');
+}
+
+.grid-4-img-2 {
+    background-image: url('./assets/grid4image2.png');
+}
+
+.grid-5-img-1 {
+    background-image: url('./assets/grid5image1.png');
+}
+
+.grid-5-img-2 {
+    background-image: url('./assets/grid5image2.png');
+}
+    
+    */
